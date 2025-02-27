@@ -1,0 +1,15 @@
+/* Remove or reduce padding around the main content */
+.md-content {
+  max-width: none !important; /* Removes the default max-width (often ~900px). */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 1rem;   /* Adjust these values as needed */
+  padding-right: 1rem;
+}
+
+/* Optionally, reduce or remove the sidebar gap if you're using the integrated ToC */
+.md-sidebar--primary {
+  margin-left: 0 !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
