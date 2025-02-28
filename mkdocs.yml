@@ -15,10 +15,10 @@ theme:
   palette:
     # Example: lighten/darken or define your own theme colors
     - scheme: default
-      primary: teal
+      primary: purple
       accent: pink
     - scheme: slate
-      primary: teal
+      primary: purple
       accent: pink
       toggle:
         icon: material/weather-night
