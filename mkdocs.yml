@@ -7,6 +7,7 @@ site_url: "https://example.com"  # Replace with your URL if desired
 # -------------
 theme:
   name: material
+  custom_dir: overrides
   # The next lines are optional; they showcase some recommended settings:
   features:
     - navigation.instant          # Dynamic navigation within a single page
@@ -39,7 +40,13 @@ nav:
   - Plugins: plugins.md
   - Reference: reference.md
   - Markdown: markdown.md
-  - Python: python/index.md
+  - Python: 
+    - python/index.md
+    - Dictionary: python/dictionary.md
+    - List: python/list.md
+  - About: about.md
+  - Contact Us: contact.md  
+
 
 
 # -------------
@@ -61,3 +68,4 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true
+

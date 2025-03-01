@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+<style>
+  .md-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .md-header__title {
+    font-size: 1.0rem;
+    font-weight: bold;
+  }
+
+  .md-header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-top: 3px;
+  }
+
+  .md-header__nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem; /* Increased font size */
+    font-weight: normal;
+  }
+
+  .md-search {
+    align-self: flex-end;
+    margin-left: auto;
+  }
+</style>
+{% endblock %}
+
+{% block header %}
+<header class="md-header">
+  <!-- Title -->
+  <div class="md-header__title">
+    <a href="{{ base_url }}/">Sandbox</a>
+  </div>
+
+  <!-- Navigation on a new row -->
+  <nav class="md-header__nav">
+    
+    <a href="https://blutterfly.github.io/portal">Portal</a>
+    <a href="https://blutterfly.github.io/python">Python</a>
+    <a href="https://blutterfly.github.io/sandbox">Sandbox</a>
+  </nav>
+
+  <!-- Search Bar -->
+  <div class="md-search" data-md-component="search"></div>
+</header>
+{% endblock %}
